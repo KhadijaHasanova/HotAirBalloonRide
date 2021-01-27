@@ -19,7 +19,7 @@ function setup() {
   database = firebase.database();
 
   //create the canvas
-  createCanvas(800,400);
+  createCanvas(1500,700);
 
   var balloonPosition = database.ref("Balloon/position");
   balloonPosition.on("value",readPosition,showError);
